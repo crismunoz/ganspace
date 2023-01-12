@@ -270,7 +270,7 @@ if __name__ == '__main__':
     CX = args.comp_id
     from tqdm import tqdm
     import cv2
-    totam_n_imgs = 50
+    totam_n_imgs = args.iterations//10
     
     images_dir = args.out_path#'/content/drive/MyDrive/Consultorias/ImageGenerator/DASH_ENVIRONMENT/GANsSpace/images'
     for i,(val,tval) in enumerate(zip(values[args.start:],tag_values[args.start:])):
