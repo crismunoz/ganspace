@@ -67,6 +67,9 @@ class Config:
         parser.add_argument('--sigma', type=float, default=2.0, help='Number of stdevs to walk in visualize.py')
         parser.add_argument('--inputs', type=str, default=None, help='Path to directory with named components')
         parser.add_argument('--seed', type=int, default=None, help='Seed used in decomposition')
+        parser.add_argument('--comp_id', type=int, default=None, help='Seed used in decomposition')
+        parser.add_argument('--start', type=int, default=0, help='Seed used in decomposition')
+        parser.add_argument('--out_path', type=str, default=None, help='Path to directory with named components')
         args = parser.parse_args(args)
 
         return self.from_dict(args.__dict__)
