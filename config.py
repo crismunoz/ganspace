@@ -70,7 +70,7 @@ class Config:
         parser.add_argument('--comp_id', type=int, default=None, help='Seed used in decomposition')
         parser.add_argument('--start', type=int, default=0, help='1-11 atribute value to start')
         parser.add_argument('--out_path', type=str, default=None, help='Path to directory where image will be saved')
-        parser.add_argument('--iterations', type=int, default=0, help='Number of iterations (images). Could be 10,20,30,...')
+        parser.add_argument('--iterations', type=int, default=500, help='Number of iterations (images). Could be 10,20,30,...')
         args = parser.parse_args(args)
 
         return self.from_dict(args.__dict__)
